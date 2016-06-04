@@ -1,4 +1,5 @@
 {{outlet}}
-{{#each model as |song|}}
-  <p>{{song.title}}</p>
+<h3>Songs</h3>
+{{#each songs as |song|}}
+  <p>{{song.title}}: {{song.length_in_seconds}} seconds</p>
 {{/each}}
