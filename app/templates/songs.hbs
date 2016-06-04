@@ -1,5 +1,11 @@
-{{outlet}}
 <h3>Songs</h3>
-{{#each songs as |song|}}
-  <p>{{song.title}}: {{song.length_in_seconds}} seconds</p>
-{{/each}}
+<ul>
+  {{#each songs as |song|}}
+    <li>
+      {{#link-to "songs.song" song}}{{song.title}}{{/link-to}}: {{song.length_in_seconds}} seconds
+    </li>
+  {{/each}}
+</ul>
+
+
+{{outlet}}
