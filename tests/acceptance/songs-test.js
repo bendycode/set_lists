@@ -8,5 +8,6 @@ test('visiting /songs', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/songs');
+    assert.equal(find('#title').text(), 'Set Lists Application');
   });
 });
