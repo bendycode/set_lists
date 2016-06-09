@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('song', {
       path: '/:id'
     });
+    this.route('new');
   });
 });
 
